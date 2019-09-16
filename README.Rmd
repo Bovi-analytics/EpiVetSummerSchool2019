@@ -1,0 +1,32 @@
+---
+title: "Notebook for Jolien Oosterink"
+output: 
+  github_document:
+    toc: true
+    toc_depth: 3
+editor_options: 
+  chunk_output_type: inline
+---
+
+# Packages
+
+```{r}
+#data manipulation
+if (!require("dplyr")) {
+  install.packages("dplyr", dependencies = TRUE)
+  library(dplyr)
+}
+#drop_na
+if (!require("tidyr")) {
+  install.packages("tidyr", dependencies = TRUE)
+  library(tidyr)
+}
+```
+
+# Basic code
+
+```{r}
+plot(cars)
+```
+
+I have a bright STAT idea
